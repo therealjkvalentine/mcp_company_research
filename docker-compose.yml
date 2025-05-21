@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  fastmcp-add:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8001:81"
+    environment:
+      - PORT=8001
